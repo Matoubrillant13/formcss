@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+body { font-family: 'sans-serif;', cursive !important; }
+
+.segmented-buttons {
+  display: flex;
+}
+
+.segmented-buttons div {
+  flex: 1;
+  color: #333 !important ;
+  background-color: #ffffff !important;
+  background-image: linear-gradient(to right, #ffffff 0%, #ffffff 100%) !important;
+  font-size: 12px !important ;
+  padding: 8px !important ;
+  text-align: center;
+  cursor: pointer;
+  border-color: #ddd !important;
+  border: 1px solid #ddd !important;
+}
+
+.single-choice-dropdown {
+  font-size: 12px !important ;
+  padding: 8px !important ;
+  text-align: center;
+  background-image: linear-gradient(to right, #e1e6fb 0%, #e1e6fb 100%) !important;
+  border: none !important;
+  border-radius: 10px !important;
+}
+
+.segmented-buttons div:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.segmented-buttons div:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.segmented-buttons div:not(:last-child) {
+  border-right: none;
+}
+
+.segmented-buttons div.active {
+  background-color: #e1e6fb !important;
+  background-image: linear-gradient(to right, #e1e6fb 0%, #e1e6fb 100%) !important;
+  position: relative;
+}
+
+.segmented-buttons div.active::before {
+  content: "\f00c";
+  font-family: FontAwesome;
+  color: #008af2;
+  font-size: 12px;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.item-info {text-align: center;}
+.prod-cat-item .item-title {           
+  text-transform: uppercase;
+  font-size: 1.3em !important;
+}
+.prod-cat-item-test:hover img {
+  transform: rotate(1deg);
+  transition: transform 0.2s;
+}
+button, .btn, .form-control {border-radius: 10px !important; transition: all 0.3s cubic-bezier(.25,.8,.25,1);}
+button, .btn-primary {background-color: #1e398d !important;}
+button, .btn-primary {
+    background-color: #1e398d !important;
+}
+
+button:hover, button:active, .btn-primary:hover, .btn-primary:active {
+    background-color: #ffffff !important; /* Fond blanc */
+    color: #e6007e !important; /* Texte magenta */
+    background-image: none !important;
+}
+.product-gallery-primary {border: none !important;}
+.input-group-btn > .btn {margin-left: 8px !important;}
+img, p {border-radius: 5px !important;}
